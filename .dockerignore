@@ -1,0 +1,11 @@
+cat > .dockerignore << 'EOF'
+.git
+.gitignore
+*.iml
+.idea
+out/
+build/
+*.jar
+!out.jar
+.DS_Store
+EOF
