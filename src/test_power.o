@@ -1,0 +1,14 @@
+MODULE Power;
+VAR base, exp, result, i: INTEGER;
+BEGIN
+    base := 2;
+    exp := 5;
+    result := 1;
+    i := 1;
+    WHILE i <= exp DO
+        result := result * base;
+        i := i + 1
+    END;
+    Out.Int(result, 3);
+    Out.Ln
+END Power.

@@ -1,0 +1,15 @@
+MODULE Prime;
+VAR n, d: INTEGER;
+BEGIN
+    n := 13;
+    d := 2;
+    WHILE n MOD d # 0 DO
+        d := d + 1
+    END;
+    IF d = n THEN
+        Out.Int(1, 2)
+    ELSE
+        Out.Int(0, 2)
+    END;
+    Out.Ln
+END Prime.

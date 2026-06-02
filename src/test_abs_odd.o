@@ -1,0 +1,11 @@
+MODULE ConstMaxMin;
+VAR x: INTEGER;
+
+BEGIN
+  x := MAX(100, 200);
+  Out.Int(x, 0); Out.Ln;
+  x := MIN(100, 200);
+  Out.Int(x, 0); Out.Ln;
+  x := MAX(7, 7);
+  Out.Int(x, 0); Out.Ln
+END ConstMaxMin.

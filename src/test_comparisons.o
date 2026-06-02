@@ -1,0 +1,15 @@
+MODULE TestCmpAll;
+VAR a, b, lt, le, gt, ge: INTEGER;
+BEGIN
+    a := 10;
+    b := 5;
+    IF a < b THEN lt := 1 ELSE lt := 0 END;
+    IF a <= b THEN le := 1 ELSE le := 0 END;
+    IF a > b THEN gt := 1 ELSE gt := 0 END;
+    IF a >= b THEN ge := 1 ELSE ge := 0 END;
+    Out.Int(lt, 2);
+    Out.Int(le, 2);
+    Out.Int(gt, 2);
+    Out.Int(ge, 2);
+    Out.Ln
+END TestCmpAll.

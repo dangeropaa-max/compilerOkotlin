@@ -1,0 +1,12 @@
+MODULE While;
+VAR i, sum: INTEGER;
+BEGIN
+    i := 1;
+    sum := 0;
+    WHILE i <= 5 DO
+        sum := sum + i;
+        i := i + 1
+    END;
+    Out.Int(sum, 3);
+    Out.Ln
+END While.

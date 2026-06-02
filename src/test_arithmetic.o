@@ -1,0 +1,17 @@
+MODULE Arithmetic;
+VAR a, b, add, sub, mult, divv, modd: INTEGER;
+BEGIN
+    a := 20;
+    b := 7;
+    add := a + b;
+    sub := a - b;
+    mult := a * b;
+    divv := a DIV b;
+    modd := a MOD b;
+    Out.Int(add, 4);
+    Out.Int(sub, 4);
+    Out.Int(mult, 4);
+    Out.Int(divv, 4);
+    Out.Int(modd, 4);
+    Out.Ln
+END Arithmetic.

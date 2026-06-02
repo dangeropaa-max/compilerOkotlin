@@ -1,0 +1,20 @@
+MODULE Square;
+CONST l = 0;
+VAR n, k, s: INTEGER;
+BEGIN
+
+    l = 5 ;
+    n := 16;
+    k := 1;
+    s := 0;
+    WHILE s < n DO
+        s := s + k;
+        k := k + 2
+    END;
+    IF s = n THEN
+        Out.Int(1, 2)
+    ELSE
+        Out.Int(0, 2)
+    END;
+    Out.Ln
+END Square.

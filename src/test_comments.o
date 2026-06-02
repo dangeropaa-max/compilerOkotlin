@@ -1,0 +1,9 @@
+MODULE Comments;
+VAR x: INTEGER;
+BEGIN
+    (* Это комментарий *)
+    x := 42;
+    (* Вложенный (* комментарий *) работает *)
+    Out.Int(x, 3);
+    Out.Ln
+END Comments.

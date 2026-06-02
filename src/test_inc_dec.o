@@ -1,0 +1,11 @@
+MODULE IncDec;
+VAR i, j: INTEGER;
+BEGIN
+    i := 5;
+    j := 10;
+    INC(i);
+    DEC(j, 3);
+    Out.Int(i, 3);
+    Out.Int(j, 3);
+    Out.Ln
+END IncDec.

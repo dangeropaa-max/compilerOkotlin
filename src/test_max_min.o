@@ -1,0 +1,10 @@
+MODULE MaxMin;
+VAR maxVal, minVal: INTEGER;
+BEGIN
+    maxVal := MAX(INTEGER);
+    minVal := MIN(INTEGER);
+    Out.Int(maxVal, 12);
+    Out.Ln;
+    Out.Int(minVal, 12);
+    Out.Ln
+END MaxMin.

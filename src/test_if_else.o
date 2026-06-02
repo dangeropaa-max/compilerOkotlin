@@ -1,0 +1,12 @@
+MODULE IfElse;
+VAR x, y: INTEGER;
+BEGIN
+    x := 10;
+    IF x > 5 THEN
+        y := 1
+    ELSE
+        y := 0
+    END;
+    Out.Int(y, 2);
+    Out.Ln
+END IfElse.

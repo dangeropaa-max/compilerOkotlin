@@ -1,0 +1,11 @@
+MODULE InputOutput;
+VAR a, b, sum: INTEGER;
+BEGIN
+    Out.Int(13, 3);
+    Out.Ln;
+    In.Int(a);
+    In.Int(b);
+    sum := a + b;
+    Out.Int(sum, 5);
+    Out.Ln
+END InputOutput.

@@ -1,0 +1,74 @@
+MODULE Primes;
+(* Простые числа от 2 до n *)
+
+IMPORT In, Out;
+
+CONST
+  w = 6;
+
+VAR
+  n, c, i, d : INTEGER;
+
+BEGIN
+
+  Out.Int(MIN(INTEGER), 20);
+  Out.Ln();
+  Out.Ln;
+
+  n := 10;
+  WHILE n > 0 DO
+    Out.Int(n, 4);
+    DEC(n);
+  END;
+
+  Out.Ln;
+
+  d := 12;
+  WHILE d > 0 DO
+    Out.Int(d, 4);
+    DEC(d);
+  END;
+
+  Out.Ln;
+  n := 1;
+  IF n = 1 THEN
+    Out.Int(11, 0);
+  ELSIF n = 2 THEN
+    Out.Int(22, 0);
+  ELSIF n = 3 THEN
+    Out.Int(33, 0);
+  ELSE
+    Out.Int(44, 0);
+  END;
+
+
+  HALT(-1);
+
+  In.Open;
+  In.Int(n);
+  c := 0;  (* Счетчик простых *)
+  i := 2;
+
+  WHILE i <= n DO
+    (* Делим на 2, 3, ... пока не разделится *)
+    d := 2;
+    WHILE i MOD d # 0 DO
+      INC(d)
+    END;
+
+    IF d = i THEN  (* i - простое *)
+      INC(c);
+      Out.Int(d, 8)
+    END;
+
+    INC(i);
+  END;
+
+  Out.Ln;
+  Out.Int(c, 0);
+  Out.Int(ABS(12), 0);
+  Out.Int(ABS(-34), 0);
+  Out.Int(MAX(INTEGER), 0);
+  Out.Int(MIN(INTEGER), 0);
+
+END Primes.

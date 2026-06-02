@@ -1,0 +1,45 @@
+MODULE FullDemo;
+IMPORT In, Out;
+CONST MAXN = 10;
+VAR n, i, sum, count, isPrime: INTEGER;
+BEGIN
+    (* Выводим минимальное и максимальное значение INTEGER *)
+    Out.Int(MIN(INTEGER), 20);
+    Out.Ln;
+    Out.Int(MAX(INTEGER), 20);
+    Out.Ln;
+    Out.Ln;
+
+    (* Вводим число *)
+    Out.Int(13, 3);
+    Out.Ln;
+    In.Int(n);
+    Out.Ln;
+
+    (* Проверяем, простое ли число *)
+    i := 2;
+    isPrime := 1;
+    WHILE i <= n DIV 2 DO
+        IF n MOD i = 0 THEN
+            isPrime := 0
+        END;
+        i := i + 1
+    END;
+
+    IF isPrime = 1 THEN
+        Out.Int(1, 3)
+    ELSE
+        Out.Int(0, 3)
+    END;
+    Out.Ln;
+
+    (* Сумма чисел от 1 до n *)
+    i := 1;
+    sum := 0;
+    WHILE i <= n DO
+        sum := sum + i;
+        i := i + 1
+    END;
+    Out.Int(sum, 5);
+    Out.Ln
+END FullDemo.
